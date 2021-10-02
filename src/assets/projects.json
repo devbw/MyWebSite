@@ -1,0 +1,18 @@
+[
+  {
+    "id" : "1",
+    "projet" : "30fit",
+    "entreprise" : "devbw",
+    "link" : "https://30fit.devbw.fr/",
+    "descript" : "Une PWA pensée pour les sportifs. Elle permet de générer des entrainements personnalisés et aléatoires, avec un chronomètre intégré et un moteur de recherche de recettes en version test.",
+    "techno" : ["VUE.JS", "HTML", "CSS", "API", "PWA"]
+  },
+  {
+    "id" : "2",
+    "projet" : "Shiksha",
+    "entreprise" : "shiksha",
+    "link" : "https://shiksha.yoga/",
+    "descript" : "Shiksha est une plateforme de vidéos et de lives sur le thème du yoga, elle vous permet de vous initier dans l'art du yoga et de la relaxation",
+    "techno" : ["VUE.JS", "HTML", "CSS", "API"]
+  }
+]
