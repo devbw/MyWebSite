@@ -3,10 +3,10 @@
     <nav>
       <div>DEVBW.</div>
       <div class="links">
-        <p class="link">About</p>
-        <p class="link">Skills</p>
-        <p class="link">Projects</p>
-        <p class="link">Contact</p>
+        <router-link tag="p" class="link" to="/">About</router-link>
+        <router-link tag="p" class="link" to="/skills">Skills</router-link>
+        <router-link tag="p" class="link" to="/projects">Projects</router-link>
+        <router-link tag="p" class="link" to="/contact">Contact</router-link>
       </div>
       <button class="site__btn">Click here</button>
     </nav>

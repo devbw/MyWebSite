@@ -4,7 +4,7 @@
       <div class="quit">
         <i class="fas fa-times" @click="toggleModale"></i>
       </div>
-      <div class="container">
+      <div class="container__spinner">
         <div class="spinner">
           <span></span>
           <span></span>
@@ -13,9 +13,9 @@
       </div>
       <div class="links fade-in-bottom">
         <router-link tag="h2" to="/">About</router-link>
-        <router-link tag="h2" to="/">Skills</router-link>
-        <router-link tag="h2" to="/">Projects</router-link>
-        <router-link tag="h2" to="/">Contact</router-link>
+        <router-link tag="h2" to="/Skills">Skills</router-link>
+        <router-link tag="h2" to="/Projects">Projects</router-link>
+        <router-link tag="h2" to="/contact">Contact</router-link>
       </div>
     </div>
   </div>
@@ -46,6 +46,12 @@ export default {
   min-height: 300px;
   position: fixed;
   background-color: #1d2026;
+  justify-content: center;
+}
+.quit{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .links {
   display: flex;
@@ -96,11 +102,10 @@ h2 {
   padding: 1rem 2rem;
   height: 50px;
 }
-.container{
+.container__spinner{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8rem 0 6rem 0;
   opacity: .2;
 }
 .spinner{
