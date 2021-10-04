@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="sontainer">
     <div class="spinner">
       <span></span>
       <span></span>
@@ -42,7 +42,7 @@ p{
   width: 50%;
   text-align: center;
 }
-.container{
+.sontainer{
   display: flex;
   flex-direction: column;
   align-items: center;

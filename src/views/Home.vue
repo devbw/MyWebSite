@@ -19,10 +19,5 @@ export default {
 </script>
 
 <style scoped>
-.background{
-  background: #1d2026;
-  min-height: 100vh;
-  max-height: 100%;
-  padding: 1rem;
-}
+
 </style>

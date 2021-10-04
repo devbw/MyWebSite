@@ -8,7 +8,7 @@
         <p class="link">Projects</p>
         <p class="link">Contact</p>
       </div>
-      <button class="link">Click here</button>
+      <button class="site__btn">Click here</button>
     </nav>
     <modale :afficher="afficher" :toggleModale="toggleModale"></modale>
     <div class="menu">
@@ -46,11 +46,12 @@ nav{
   align-items: center;
   width: 90%;
   margin: auto;
-  margin-top: 1rem;
+  padding: 1rem 0;
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
+  background: #1d2026;
 }
 button{
   height: 30px;
@@ -85,6 +86,17 @@ p{
 .modale{
   width: 100%;
   height: 100%;
+}
+.color__btn{
+  background:#bd3bb6;
+}
+.site__btn{
+  background:#bd3bb6;
+  color: #FFF;
+  transition: .5s;
+}
+.site__btn:hover{
+  transform: translateY(10px)
 }
 @media (max-width: 600px) {
   nav{

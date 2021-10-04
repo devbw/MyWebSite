@@ -14,7 +14,7 @@
       <div class="links fade-in-bottom">
         <router-link tag="h2" to="/">About</router-link>
         <router-link tag="h2" to="/">Skills</router-link>
-        <router-link tag="h2" to="/">Project</router-link>
+        <router-link tag="h2" to="/">Projects</router-link>
         <router-link tag="h2" to="/">Contact</router-link>
       </div>
     </div>
