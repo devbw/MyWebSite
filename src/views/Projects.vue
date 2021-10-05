@@ -7,50 +7,19 @@
     </div>
     <div class="container__projets">
       <div class="projets" v-for="projet in projets" :key="projet.id">
-        <v-card class="mx-auto" max-width="270">
-          <v-img :src="getImgUrl(projet.image)" height="200px" style="background: #000;"></v-img>
-
-          <v-card-title>
-            {{ projet.projet }}
-          </v-card-title>
-
-          <v-card-subtitle>
-            {{ projet.entreprise }}
-          </v-card-subtitle>
-
-          <v-card-actions>
-            <v-btn @click="show = !show" color="orange lighten-2" text>
-              Voir +
-            </v-btn>
-
-            <v-spacer></v-spacer>
-
-            <v-btn icon @click="show = !show">
-              <i class="fas fa-mouse"></i>
-            </v-btn>
-          </v-card-actions>
-
-          <v-expand-transition>
-            <div v-show="show">
-              <v-divider></v-divider>
-              <v-card-subtitle>
-                Description :
-              </v-card-subtitle>
-              <v-card-text>
-                {{ projet.descript }}
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-subtitle>
-                Technos :
-              </v-card-subtitle>
-              <div v-for="tech in projet.techno" :key="tech.index">
-                <p class="tech">{{ tech }}</p>
+        <div class="container__card">
+          <div class="box">
+            <div class="box__content">
+              <h2>{{ projet.projet }}</h2>
+              <h3>{{ projet.entreprise }}</h3>
+              <p> {{ projet.descript }} </p>
+              <div class="group__skills">
+                <span v-for="skill in projet.techno" :key="skill.index"> {{ skill }} </span>
               </div>
-              <v-divider class="technos"></v-divider>
-              <button class="site__btn"><a :href="projet.link" target="_blank">Site</a></button>
+              <a :href="projet.link" target="_blank" class="box__button">Site</a>
             </div>
-          </v-expand-transition>
-        </v-card>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -89,11 +58,11 @@ export default {
 h1 {
   margin: 1rem;
 }
-h2 {
-  color: #000;
-}
 h3 {
-  color: #000;
+  color: #bd3bb6;
+}
+h4{
+  color: white;
 }
 a{
   text-decoration: none;
@@ -102,6 +71,9 @@ a{
 p {
   margin: 0;
   text-align: center;
+}
+span{
+  color:#66d3fa;
 }
 .container {
   width: 90%;
@@ -152,5 +124,70 @@ p {
 }
 .tech{
   color:#bd3bb6;
+}
+.box{
+  position: relative;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #1d2026;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+.box::before{
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 120%;
+  background: linear-gradient(#bd3bb6, #66d3fa);
+  animation: animate 4s linear infinite;
+}
+.box::after{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: #1d2026;
+  border-radius: .5rem;
+}
+.box__content{
+  position: relative;
+  color: #FFF;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 80%;
+}
+.box__content p{
+  text-align: left;
+  font-size: 0.9rem;
+}
+.group__skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+.group__skills span{
+  margin: 0.3rem .5rem 0 0;
+}
+.box__button{
+  margin: 1rem 0;
+  background:#bd3bb6;
+  text-align: center;
+  border-radius: .5rem;
+  transition: .3s;
+}
+.box__button:hover{
+  transform: translateY(10px);
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 </style>
