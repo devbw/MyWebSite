@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <div>DEVBW.</div>
+      <router-link tag="div" class="link" to="/">DEVBW.</router-link>
       <div class="links">
         <router-link tag="p" class="link" to="/">About</router-link>
         <router-link tag="p" class="link" to="/skills">Skills</router-link>
@@ -12,7 +12,7 @@
     </nav>
     <modale :afficher="afficher" :toggleModale="toggleModale"></modale>
     <div class="menu">
-      <div>DEVBW.</div>
+      <router-link tag="div" class="link" to="/">DEVBW.</router-link>
       <i class="fas fa-bars" @click="toggleModale()"></i>
     </div>
   </div>
