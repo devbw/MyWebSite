@@ -82,5 +82,10 @@ h1 {
 .skill h3{
   margin: 0 1rem;
   cursor: pointer;
+  transition: .4s;
+}
+.skill h3:hover{
+  color: #bd3bb6;
+  transform: translateY(10px);
 }
 </style>

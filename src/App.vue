@@ -53,5 +53,47 @@ body {
     opacity: 1;
   }
 }
+.spinner{
+  position: relative;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.spinner span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  pointer-events: none;
+  animation: animate 10s linear infinite;
+}
+.spinner span:nth-child(1){
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  border-color: #1fceed;
+}
+.spinner span:nth-child(2){
+  animation-direction: reverse;
+  border-radius: 74% 26% 42% 58% / 62% 65% 35% 38% ;
+  border-color: #ed1fe3;
+}
+.spinner span:nth-child(3){
+  animation-duration: 12s;
+  border-radius: 49% 51% 26% 74% / 27% 29% 71% 73% ;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
 </style>

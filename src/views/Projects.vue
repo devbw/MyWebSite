@@ -60,9 +60,7 @@ h1 {
 }
 h3 {
   color: #bd3bb6;
-}
-h4{
-  color: white;
+  margin: .2rem 0 .5rem 0;
 }
 a{
   text-decoration: none;
@@ -82,6 +80,9 @@ span{
   align-items: center;
   margin: 10rem auto 1rem auto;
 }
+.container__card{
+  margin: 0 1rem;
+}
 .container__projets {
   margin-top: 3rem;
   display: flex;
@@ -91,36 +92,6 @@ span{
 .projets {
   margin: 1rem;
   transition: 0.5s;
-}
-.sub__container {
-  height: 100%;
-  width: 100%;
-}
-.pic__projet {
-  height: 100%;
-}
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-.fas {
-  color: #bd3bb6;
-  transition: 0.8s;
-}
-.fas:hover {
-  transform: rotate(360deg);
-}
-.site__btn{
-  background:#bd3bb6;
-  margin: 1rem;
-  color: #FFF;
-  transition: .5s;
-}
-.site__btn:hover{
-  transform: translateY(10px)
-}
-.technos{
-  margin-top: 1rem;
 }
 .tech{
   color:#bd3bb6;
@@ -140,10 +111,13 @@ span{
 .box::before{
   content: '';
   position: absolute;
-  width: 180px;
+  width: 200px;
   height: 120%;
   background: linear-gradient(#bd3bb6, #66d3fa);
-  animation: animate 4s linear infinite;
+  animation: animate 10s linear infinite;
+}
+.box::after:hover ~ .box::before{
+  animation: animate 10s reverse infinite;
 }
 .box::after{
   content: '';

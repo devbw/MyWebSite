@@ -11,19 +11,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/Projects',
+    path: '/projects',
     name: 'Projects',
     component: () => import('../views/Projects.vue')
   },
   {
-    path: '/Skills',
+    path: '/skills',
     name: 'Skills',
     component: () => import('../views/Skills.vue')
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue')
+  }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

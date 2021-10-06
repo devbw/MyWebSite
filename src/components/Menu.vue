@@ -83,6 +83,9 @@ p{
 .menu{
   display: none;
 }
+.menu__container{
+  display: none;
+}
 .modale{
   width: 100%;
   height: 100%;
@@ -106,12 +109,11 @@ p{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    padding: 1rem;
     top: 0;
-    left: 0;
-    right: 0;
+    padding: 1rem 0;
+    width: 90%;
+    z-index: 10;
     background: #1d2026;
-    z-index: 1;
   }
 }
 </style>
