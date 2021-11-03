@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <Menu class="menu"/>
+    <Menu />
     <div class="spinner">
       <span></span>
       <span></span>
@@ -36,9 +36,6 @@ export default {
 </script>
 
 <style scoped>
-.menu{
-  width:100%;
-}
 a{
   color: white;
 }

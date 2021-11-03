@@ -83,9 +83,6 @@ p{
 .menu{
   display: none;
 }
-.menu__container{
-  display: none;
-}
 .modale{
   width: 100%;
   height: 100%;

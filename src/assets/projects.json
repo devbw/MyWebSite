@@ -16,5 +16,23 @@
     "descript" : "Shiksha est une plateforme de vidéos et de lives sur le thème du yoga, elle vous permet de vous initier à l'art du yoga et de la relaxation",
     "techno" : ["VUE.JS", "JAVASCRIPT", "HTML", "CSS", "API"],
     "image" : "shikshamigna.png"
+  },
+  {
+    "id" : "3",
+    "projet" : "TrafficMonkeys",
+    "entreprise" : "PulpMeUp",
+    "link" : "https://shiksha.yoga/",
+    "descript" : "Création de routes pour l'api d'un des clients de l'entreprise",
+    "techno" : ["NODE.JS", "JAVASCRIPT", "API"],
+    "image" : "shikshamigna.png"
+  },
+  {
+    "id" : "4",
+    "projet" : "CentralCare",
+    "entreprise" : "DevBW",
+    "link" : "http://centralcare.devbw.fr/",
+    "descript" : "! TOUJOURS EN COURS DE CREATION, URL DE TEST ! Projet à destinations des acteurs du monde de l'aide à la personne, plateforme sociale d'annonces de particulier à particulier",
+    "techno" : ["REACT.JS", "JAVASCRIPT", "API", "STRIPE"],
+    "image" : "shikshamigna.png"
   }
 ]
